@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_09cdb98ffbef595bf5e3a5af67afb45e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_09cdb98ffbef595bf5e3a5af67afb45e" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_09cdb98ffbef595bf5e3a5af67afb45e = L.map(
+                "map_09cdb98ffbef595bf5e3a5af67afb45e",
+                {
+                    center: [37.0902, -95.7129],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_96abb14c460185cd546847b5a26a2966 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            );
+        
+    
+            tile_layer_96abb14c460185cd546847b5a26a2966.addTo(map_09cdb98ffbef595bf5e3a5af67afb45e);
+        
+    
+            var marker_1c1f03eb8be6bb6ddd7d4d995cbaa242 = L.marker(
+                [39.9526, -75.1652],
+                {}
+            ).addTo(map_09cdb98ffbef595bf5e3a5af67afb45e);
+        
+    
+            var icon_22e69d3f81ca4fa07f9363a6bdc6f6e8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1c1f03eb8be6bb6ddd7d4d995cbaa242.setIcon(icon_22e69d3f81ca4fa07f9363a6bdc6f6e8);
+        
+    
+        var popup_fe93de7b2d571275dcc6042eab304572 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_568ff376e348670f3a5e6ef7254327b7 = $(`<div id="html_568ff376e348670f3a5e6ef7254327b7" style="width: 100.0%; height: 100.0%;">Wills Eye Hospital</div>`)[0];
+                popup_fe93de7b2d571275dcc6042eab304572.setContent(html_568ff376e348670f3a5e6ef7254327b7);
+            
+        
+
+        marker_1c1f03eb8be6bb6ddd7d4d995cbaa242.bindPopup(popup_fe93de7b2d571275dcc6042eab304572)
+        ;
+
+        
+    
+    
+            marker_1c1f03eb8be6bb6ddd7d4d995cbaa242.bindTooltip(
+                `<div>
+                     Active: Wills Eye Hospital - Philadelphia, Pennsylvania
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7dfad3b08f48598d27e14b8724467e92 = L.marker(
+                [33.749, -84.388],
+                {}
+            ).addTo(map_09cdb98ffbef595bf5e3a5af67afb45e);
+        
+    
+            var icon_e7f09a97cc24f2d5667be493c4eb793b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7dfad3b08f48598d27e14b8724467e92.setIcon(icon_e7f09a97cc24f2d5667be493c4eb793b);
+        
+    
+        var popup_b688fe15e8e452e7b6e0d92bf2cb527d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b3116fbc7e6b210521ebb5030b46827f = $(`<div id="html_b3116fbc7e6b210521ebb5030b46827f" style="width: 100.0%; height: 100.0%;">Emory University</div>`)[0];
+                popup_b688fe15e8e452e7b6e0d92bf2cb527d.setContent(html_b3116fbc7e6b210521ebb5030b46827f);
+            
+        
+
+        marker_7dfad3b08f48598d27e14b8724467e92.bindPopup(popup_b688fe15e8e452e7b6e0d92bf2cb527d)
+        ;
+
+        
+    
+    
+            marker_7dfad3b08f48598d27e14b8724467e92.bindTooltip(
+                `<div>
+                     Active: Emory University - Atlanta, Georgia
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bdc321b2c220e8ca0bd1647e00f83c9d = L.marker(
+                [47.6062, -122.3321],
+                {}
+            ).addTo(map_09cdb98ffbef595bf5e3a5af67afb45e);
+        
+    
+            var icon_9fdb33523955d1a004920b1bdbc720c4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_bdc321b2c220e8ca0bd1647e00f83c9d.setIcon(icon_9fdb33523955d1a004920b1bdbc720c4);
+        
+    
+        var popup_4aec4fbaf64819c07003456f66f0c4b0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_38b1978ae32b26be2a0c24c7c90e616b = $(`<div id="html_38b1978ae32b26be2a0c24c7c90e616b" style="width: 100.0%; height: 100.0%;">Seattle Childrens</div>`)[0];
+                popup_4aec4fbaf64819c07003456f66f0c4b0.setContent(html_38b1978ae32b26be2a0c24c7c90e616b);
+            
+        
+
+        marker_bdc321b2c220e8ca0bd1647e00f83c9d.bindPopup(popup_4aec4fbaf64819c07003456f66f0c4b0)
+        ;
+
+        
+    
+    
+            marker_bdc321b2c220e8ca0bd1647e00f83c9d.bindTooltip(
+                `<div>
+                     Active: Seattle Childrens - Seattle, Washington
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a4c70abbb7fed52c07812b88b4151be4 = L.marker(
+                [45.5152, -122.6784],
+                {}
+            ).addTo(map_09cdb98ffbef595bf5e3a5af67afb45e);
+        
+    
+            var icon_65216a971de39fdf3cc9b3d9d2d697b8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a4c70abbb7fed52c07812b88b4151be4.setIcon(icon_65216a971de39fdf3cc9b3d9d2d697b8);
+        
+    
+        var popup_35cdf832ce8ead3b15523566ebe33137 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b25fc32ffb80afa466939ca102e28380 = $(`<div id="html_b25fc32ffb80afa466939ca102e28380" style="width: 100.0%; height: 100.0%;">OHSU</div>`)[0];
+                popup_35cdf832ce8ead3b15523566ebe33137.setContent(html_b25fc32ffb80afa466939ca102e28380);
+            
+        
+
+        marker_a4c70abbb7fed52c07812b88b4151be4.bindPopup(popup_35cdf832ce8ead3b15523566ebe33137)
+        ;
+
+        
+    
+    
+            marker_a4c70abbb7fed52c07812b88b4151be4.bindTooltip(
+                `<div>
+                     Active: OHSU - Portland, Oregon
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2878177b915b49e76e1bce676a039683 = L.marker(
+                [35.1495, -90.049],
+                {}
+            ).addTo(map_09cdb98ffbef595bf5e3a5af67afb45e);
+        
+    
+            var icon_eae4b84cb185bfbe90ee4353bdeab814 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2878177b915b49e76e1bce676a039683.setIcon(icon_eae4b84cb185bfbe90ee4353bdeab814);
+        
+    
+        var popup_f8c3136568562c92894b8e760821707a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_34d9b0b6d115e9c488b7ad639f844e68 = $(`<div id="html_34d9b0b6d115e9c488b7ad639f844e68" style="width: 100.0%; height: 100.0%;">St. Jude</div>`)[0];
+                popup_f8c3136568562c92894b8e760821707a.setContent(html_34d9b0b6d115e9c488b7ad639f844e68);
+            
+        
+
+        marker_2878177b915b49e76e1bce676a039683.bindPopup(popup_f8c3136568562c92894b8e760821707a)
+        ;
+
+        
+    
+    
+            marker_2878177b915b49e76e1bce676a039683.bindTooltip(
+                `<div>
+                     Active: St. Jude - Memphis, Tennessee
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_096d606d584b07a7e299f31a7d595feb = L.marker(
+                [41.8781, -87.6298],
+                {}
+            ).addTo(map_09cdb98ffbef595bf5e3a5af67afb45e);
+        
+    
+            var icon_994588a3a2d98f91d5da238d599191e1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_096d606d584b07a7e299f31a7d595feb.setIcon(icon_994588a3a2d98f91d5da238d599191e1);
+        
+    
+        var popup_a8fbeb3e19fe70db38ca7a8c1d309252 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_73c6ab948939ff58046708e68706479d = $(`<div id="html_73c6ab948939ff58046708e68706479d" style="width: 100.0%; height: 100.0%;">Lurie Children’s</div>`)[0];
+                popup_a8fbeb3e19fe70db38ca7a8c1d309252.setContent(html_73c6ab948939ff58046708e68706479d);
+            
+        
+
+        marker_096d606d584b07a7e299f31a7d595feb.bindPopup(popup_a8fbeb3e19fe70db38ca7a8c1d309252)
+        ;
+
+        
+    
+    
+            marker_096d606d584b07a7e299f31a7d595feb.bindTooltip(
+                `<div>
+                     Active: Lurie Children’s - Chicago, Illinois
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_59cc2f3c21438c7d3ef576847c3a2bdf = L.marker(
+                [33.4484, -112.074],
+                {}
+            ).addTo(map_09cdb98ffbef595bf5e3a5af67afb45e);
+        
+    
+            var icon_e2aa1ce85c5b23b697c24f3e58539b5e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_59cc2f3c21438c7d3ef576847c3a2bdf.setIcon(icon_e2aa1ce85c5b23b697c24f3e58539b5e);
+        
+    
+        var popup_a167a28170e3e39ee270119304869af1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e097d7ae0f9ad008bc81b62524d23f20 = $(`<div id="html_e097d7ae0f9ad008bc81b62524d23f20" style="width: 100.0%; height: 100.0%;">Phoenix Children's</div>`)[0];
+                popup_a167a28170e3e39ee270119304869af1.setContent(html_e097d7ae0f9ad008bc81b62524d23f20);
+            
+        
+
+        marker_59cc2f3c21438c7d3ef576847c3a2bdf.bindPopup(popup_a167a28170e3e39ee270119304869af1)
+        ;
+
+        
+    
+    
+            marker_59cc2f3c21438c7d3ef576847c3a2bdf.bindTooltip(
+                `<div>
+                     Active: Phoenix Children's - Phoenix, Arizona
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_92cfd81254ae8b864ed1a5838bbc7036 = L.marker(
+                [43.6532, -79.3832],
+                {}
+            ).addTo(map_09cdb98ffbef595bf5e3a5af67afb45e);
+        
+    
+            var icon_c54d1afb9d3237beee09f5dece565cc7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_92cfd81254ae8b864ed1a5838bbc7036.setIcon(icon_c54d1afb9d3237beee09f5dece565cc7);
+        
+    
+        var popup_710dce6c23021c1ffb57d0f93ed0af7b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_522606a16c20dd1afbb75a7477cd8b9a = $(`<div id="html_522606a16c20dd1afbb75a7477cd8b9a" style="width: 100.0%; height: 100.0%;">Toronto Sick Kids</div>`)[0];
+                popup_710dce6c23021c1ffb57d0f93ed0af7b.setContent(html_522606a16c20dd1afbb75a7477cd8b9a);
+            
+        
+
+        marker_92cfd81254ae8b864ed1a5838bbc7036.bindPopup(popup_710dce6c23021c1ffb57d0f93ed0af7b)
+        ;
+
+        
+    
+    
+            marker_92cfd81254ae8b864ed1a5838bbc7036.bindTooltip(
+                `<div>
+                     Active: Toronto Sick Kids - Toronto, Ontario
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_51ecf930fb65bbd33a557bac7ec62d82 = L.marker(
+                [40.7608, -111.891],
+                {}
+            ).addTo(map_09cdb98ffbef595bf5e3a5af67afb45e);
+        
+    
+            var icon_fd67e22fb16fdc3d00a3921f322c84ca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_51ecf930fb65bbd33a557bac7ec62d82.setIcon(icon_fd67e22fb16fdc3d00a3921f322c84ca);
+        
+    
+        var popup_464201b9120232c6a113d23cd9a9e197 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ada3c27bd255ab2109238edf347e79c2 = $(`<div id="html_ada3c27bd255ab2109238edf347e79c2" style="width: 100.0%; height: 100.0%;">Utah</div>`)[0];
+                popup_464201b9120232c6a113d23cd9a9e197.setContent(html_ada3c27bd255ab2109238edf347e79c2);
+            
+        
+
+        marker_51ecf930fb65bbd33a557bac7ec62d82.bindPopup(popup_464201b9120232c6a113d23cd9a9e197)
+        ;
+
+        
+    
+    
+            marker_51ecf930fb65bbd33a557bac7ec62d82.bindTooltip(
+                `<div>
+                     Pending: Utah - Salt Lake City, Utah
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7ffc971f194e106fd38f61d5cbe89918 = L.marker(
+                [35.994, -78.8986],
+                {}
+            ).addTo(map_09cdb98ffbef595bf5e3a5af67afb45e);
+        
+    
+            var icon_d22e2a8e869eebc7601a66dab9dcdb8f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7ffc971f194e106fd38f61d5cbe89918.setIcon(icon_d22e2a8e869eebc7601a66dab9dcdb8f);
+        
+    
+        var popup_e272ee65077abebb5fad22299e9a3079 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_301d8979991ee4cffd4125fc85c693f0 = $(`<div id="html_301d8979991ee4cffd4125fc85c693f0" style="width: 100.0%; height: 100.0%;">Duke</div>`)[0];
+                popup_e272ee65077abebb5fad22299e9a3079.setContent(html_301d8979991ee4cffd4125fc85c693f0);
+            
+        
+
+        marker_7ffc971f194e106fd38f61d5cbe89918.bindPopup(popup_e272ee65077abebb5fad22299e9a3079)
+        ;
+
+        
+    
+    
+            marker_7ffc971f194e106fd38f61d5cbe89918.bindTooltip(
+                `<div>
+                     Pending: Duke - Durham, North Carolina
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e076e3fb95a4aaf704592ffd6f016239 = L.marker(
+                [42.3601, -71.0589],
+                {}
+            ).addTo(map_09cdb98ffbef595bf5e3a5af67afb45e);
+        
+    
+            var icon_3e3c15d370d6e1f127272d936be5a056 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e076e3fb95a4aaf704592ffd6f016239.setIcon(icon_3e3c15d370d6e1f127272d936be5a056);
+        
+    
+        var popup_0e5591f76a4849f3e04773d56c9f3568 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c63cf2b7046be8af4b5a9a1ee5d2d420 = $(`<div id="html_c63cf2b7046be8af4b5a9a1ee5d2d420" style="width: 100.0%; height: 100.0%;">Boston Children's/Harvard/Dana Farber</div>`)[0];
+                popup_0e5591f76a4849f3e04773d56c9f3568.setContent(html_c63cf2b7046be8af4b5a9a1ee5d2d420);
+            
+        
+
+        marker_e076e3fb95a4aaf704592ffd6f016239.bindPopup(popup_0e5591f76a4849f3e04773d56c9f3568)
+        ;
+
+        
+    
+    
+            marker_e076e3fb95a4aaf704592ffd6f016239.bindTooltip(
+                `<div>
+                     Pending: Boston Children's/Harvard/Dana Farber - Boston, Massachusetts
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6f75872bd1a19f27ed685ef9e076df7b = L.marker(
+                [25.7617, -80.1918],
+                {}
+            ).addTo(map_09cdb98ffbef595bf5e3a5af67afb45e);
+        
+    
+            var icon_7cb71ae40273550aa16e1b64020a8313 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6f75872bd1a19f27ed685ef9e076df7b.setIcon(icon_7cb71ae40273550aa16e1b64020a8313);
+        
+    
+        var popup_5520d78fe6fac78a4c6147142390f4d9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_054365ff5370b1f74043053a22d9b021 = $(`<div id="html_054365ff5370b1f74043053a22d9b021" style="width: 100.0%; height: 100.0%;">University of Miami/Bascom Palmer Eye Institute</div>`)[0];
+                popup_5520d78fe6fac78a4c6147142390f4d9.setContent(html_054365ff5370b1f74043053a22d9b021);
+            
+        
+
+        marker_6f75872bd1a19f27ed685ef9e076df7b.bindPopup(popup_5520d78fe6fac78a4c6147142390f4d9)
+        ;
+
+        
+    
+    
+            marker_6f75872bd1a19f27ed685ef9e076df7b.bindTooltip(
+                `<div>
+                     Pending: University of Miami/Bascom Palmer Eye Institute - Miami, Florida
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6c118b520320fa37a04fcb1c4dd2fe1f = L.marker(
+                [32.7157, -117.1611],
+                {}
+            ).addTo(map_09cdb98ffbef595bf5e3a5af67afb45e);
+        
+    
+            var icon_95c175fb6bfc74f676fd3132f9441009 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6c118b520320fa37a04fcb1c4dd2fe1f.setIcon(icon_95c175fb6bfc74f676fd3132f9441009);
+        
+    
+        var popup_8d79605822296d0eda7ff8c2b2718d58 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_41c08cb59fdbb880784ffaef7c10e2dc = $(`<div id="html_41c08cb59fdbb880784ffaef7c10e2dc" style="width: 100.0%; height: 100.0%;">UCSD</div>`)[0];
+                popup_8d79605822296d0eda7ff8c2b2718d58.setContent(html_41c08cb59fdbb880784ffaef7c10e2dc);
+            
+        
+
+        marker_6c118b520320fa37a04fcb1c4dd2fe1f.bindPopup(popup_8d79605822296d0eda7ff8c2b2718d58)
+        ;
+
+        
+    
+    
+            marker_6c118b520320fa37a04fcb1c4dd2fe1f.bindTooltip(
+                `<div>
+                     Pending: UCSD - San Diego, California
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_98d9d47e481ac7e809031ba868c0f580 = L.marker(
+                [37.7749, -122.4194],
+                {}
+            ).addTo(map_09cdb98ffbef595bf5e3a5af67afb45e);
+        
+    
+            var icon_58385735c219408ab9dafe21ef494dc7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_98d9d47e481ac7e809031ba868c0f580.setIcon(icon_58385735c219408ab9dafe21ef494dc7);
+        
+    
+        var popup_d32fafa95faf2c53de08a7dc87a34f11 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6c2a190df148b343c94b87daa14849e4 = $(`<div id="html_6c2a190df148b343c94b87daa14849e4" style="width: 100.0%; height: 100.0%;">UCSF</div>`)[0];
+                popup_d32fafa95faf2c53de08a7dc87a34f11.setContent(html_6c2a190df148b343c94b87daa14849e4);
+            
+        
+
+        marker_98d9d47e481ac7e809031ba868c0f580.bindPopup(popup_d32fafa95faf2c53de08a7dc87a34f11)
+        ;
+
+        
+    
+    
+            marker_98d9d47e481ac7e809031ba868c0f580.bindTooltip(
+                `<div>
+                     Pending: UCSF - San Francisco, California
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7aba5303b7486a6b35036576ce74490d = L.marker(
+                [43.0731, -89.4012],
+                {}
+            ).addTo(map_09cdb98ffbef595bf5e3a5af67afb45e);
+        
+    
+            var icon_1c1bea8bdab1dede68f7b7d49579fd97 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7aba5303b7486a6b35036576ce74490d.setIcon(icon_1c1bea8bdab1dede68f7b7d49579fd97);
+        
+    
+        var popup_24e83c6a8a236391ca3aca3aca5af9e1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_29e54e1df52afb16672e11e04594f87a = $(`<div id="html_29e54e1df52afb16672e11e04594f87a" style="width: 100.0%; height: 100.0%;">Wisconsin</div>`)[0];
+                popup_24e83c6a8a236391ca3aca3aca5af9e1.setContent(html_29e54e1df52afb16672e11e04594f87a);
+            
+        
+
+        marker_7aba5303b7486a6b35036576ce74490d.bindPopup(popup_24e83c6a8a236391ca3aca3aca5af9e1)
+        ;
+
+        
+    
+    
+            marker_7aba5303b7486a6b35036576ce74490d.bindTooltip(
+                `<div>
+                     Pending: Wisconsin - Madison, Wisconsin
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7f41f8e573835646df19e6604b5f9c4e = L.marker(
+                [40.7128, -74.006],
+                {}
+            ).addTo(map_09cdb98ffbef595bf5e3a5af67afb45e);
+        
+    
+            var icon_0d3857c4c8c65b8120f2232ec7d81403 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7f41f8e573835646df19e6604b5f9c4e.setIcon(icon_0d3857c4c8c65b8120f2232ec7d81403);
+        
+    
+        var popup_ed414bfa3b857a0a80d97cb46eadc62f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_24811d0d46bd77055db5d9d3968eb07b = $(`<div id="html_24811d0d46bd77055db5d9d3968eb07b" style="width: 100.0%; height: 100.0%;">New York</div>`)[0];
+                popup_ed414bfa3b857a0a80d97cb46eadc62f.setContent(html_24811d0d46bd77055db5d9d3968eb07b);
+            
+        
+
+        marker_7f41f8e573835646df19e6604b5f9c4e.bindPopup(popup_ed414bfa3b857a0a80d97cb46eadc62f)
+        ;
+
+        
+    
+    
+            marker_7f41f8e573835646df19e6604b5f9c4e.bindTooltip(
+                `<div>
+                     Pending: New York - New York City, New York
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>

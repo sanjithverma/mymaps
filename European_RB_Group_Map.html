@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_75aefd136a9bd36b06aabfd8211c811b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_75aefd136a9bd36b06aabfd8211c811b" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_75aefd136a9bd36b06aabfd8211c811b = L.map(
+                "map_75aefd136a9bd36b06aabfd8211c811b",
+                {
+                    center: [50.1109, 10.4515],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_76c23912b31c2ec0e8b05be3667cb5af = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            );
+        
+    
+            tile_layer_76c23912b31c2ec0e8b05be3667cb5af.addTo(map_75aefd136a9bd36b06aabfd8211c811b);
+        
+    
+            var marker_27310ae2d3029c0b1e71d348a63fc10d = L.marker(
+                [51.5074, -0.1278],
+                {}
+            ).addTo(map_75aefd136a9bd36b06aabfd8211c811b);
+        
+    
+            var icon_9b6ded7c2a65e83e845d7d26da14ead4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-star", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_27310ae2d3029c0b1e71d348a63fc10d.setIcon(icon_9b6ded7c2a65e83e845d7d26da14ead4);
+        
+    
+        var popup_fac088f9620f44df729a8c941c4f86b4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f4c32fda84e1c11e948cfa1aee0c84e0 = $(`<div id="html_f4c32fda84e1c11e948cfa1aee0c84e0" style="width: 100.0%; height: 100.0%;">London, UK</div>`)[0];
+                popup_fac088f9620f44df729a8c941c4f86b4.setContent(html_f4c32fda84e1c11e948cfa1aee0c84e0);
+            
+        
+
+        marker_27310ae2d3029c0b1e71d348a63fc10d.bindPopup(popup_fac088f9620f44df729a8c941c4f86b4)
+        ;
+
+        
+    
+    
+            marker_27310ae2d3029c0b1e71d348a63fc10d.bindTooltip(
+                `<div>
+                     London, UK
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_19623ea87ddabd2fbea6df45d090f51a = L.marker(
+                [52.4862, -1.8904],
+                {}
+            ).addTo(map_75aefd136a9bd36b06aabfd8211c811b);
+        
+    
+            var icon_279a3783ea0a321ee9d3b95aa2e8149d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-star", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_19623ea87ddabd2fbea6df45d090f51a.setIcon(icon_279a3783ea0a321ee9d3b95aa2e8149d);
+        
+    
+        var popup_547e6af9164ea8657c4c7cac6a503c2b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f6a95a975c4c6b185af80f7550c2a165 = $(`<div id="html_f6a95a975c4c6b185af80f7550c2a165" style="width: 100.0%; height: 100.0%;">Birmingham, UK</div>`)[0];
+                popup_547e6af9164ea8657c4c7cac6a503c2b.setContent(html_f6a95a975c4c6b185af80f7550c2a165);
+            
+        
+
+        marker_19623ea87ddabd2fbea6df45d090f51a.bindPopup(popup_547e6af9164ea8657c4c7cac6a503c2b)
+        ;
+
+        
+    
+    
+            marker_19623ea87ddabd2fbea6df45d090f51a.bindTooltip(
+                `<div>
+                     Birmingham, UK
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_730223a587e114f8dca19378b0c6c873 = L.marker(
+                [46.5197, 6.6323],
+                {}
+            ).addTo(map_75aefd136a9bd36b06aabfd8211c811b);
+        
+    
+            var icon_621f0a3517de99524857e8506fddc43c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-star", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_730223a587e114f8dca19378b0c6c873.setIcon(icon_621f0a3517de99524857e8506fddc43c);
+        
+    
+        var popup_828d0d49a09222e2d7b2b2c3c0de39c2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fbc9a8de3b206e9d364eaf10f7125edc = $(`<div id="html_fbc9a8de3b206e9d364eaf10f7125edc" style="width: 100.0%; height: 100.0%;">Lausanne, Switzerland</div>`)[0];
+                popup_828d0d49a09222e2d7b2b2c3c0de39c2.setContent(html_fbc9a8de3b206e9d364eaf10f7125edc);
+            
+        
+
+        marker_730223a587e114f8dca19378b0c6c873.bindPopup(popup_828d0d49a09222e2d7b2b2c3c0de39c2)
+        ;
+
+        
+    
+    
+            marker_730223a587e114f8dca19378b0c6c873.bindTooltip(
+                `<div>
+                     Lausanne, Switzerland
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_35dd6f5b1a770aaddddd84859a9a3f5f = L.marker(
+                [47.5596, 7.5886],
+                {}
+            ).addTo(map_75aefd136a9bd36b06aabfd8211c811b);
+        
+    
+            var icon_941263cdbbb2481b79c4007cc19b89ee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-star", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_35dd6f5b1a770aaddddd84859a9a3f5f.setIcon(icon_941263cdbbb2481b79c4007cc19b89ee);
+        
+    
+        var popup_69a43e8096b2af2dbc314a8e959929d0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8ddacbd956da642256375f797ac3af87 = $(`<div id="html_8ddacbd956da642256375f797ac3af87" style="width: 100.0%; height: 100.0%;">Basel, Switzerland</div>`)[0];
+                popup_69a43e8096b2af2dbc314a8e959929d0.setContent(html_8ddacbd956da642256375f797ac3af87);
+            
+        
+
+        marker_35dd6f5b1a770aaddddd84859a9a3f5f.bindPopup(popup_69a43e8096b2af2dbc314a8e959929d0)
+        ;
+
+        
+    
+    
+            marker_35dd6f5b1a770aaddddd84859a9a3f5f.bindTooltip(
+                `<div>
+                     Basel, Switzerland
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3eb6659808532d53e05ff47d367025c3 = L.marker(
+                [52.3676, 4.9041],
+                {}
+            ).addTo(map_75aefd136a9bd36b06aabfd8211c811b);
+        
+    
+            var icon_9c7b902582e720a04f722a058aee37f3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-star", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3eb6659808532d53e05ff47d367025c3.setIcon(icon_9c7b902582e720a04f722a058aee37f3);
+        
+    
+        var popup_830cf5e3c25d32c259b242fa4c220b82 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8810383874f260e2ab8de2c250d46daa = $(`<div id="html_8810383874f260e2ab8de2c250d46daa" style="width: 100.0%; height: 100.0%;">Amsterdam, Netherlands</div>`)[0];
+                popup_830cf5e3c25d32c259b242fa4c220b82.setContent(html_8810383874f260e2ab8de2c250d46daa);
+            
+        
+
+        marker_3eb6659808532d53e05ff47d367025c3.bindPopup(popup_830cf5e3c25d32c259b242fa4c220b82)
+        ;
+
+        
+    
+    
+            marker_3eb6659808532d53e05ff47d367025c3.bindTooltip(
+                `<div>
+                     Amsterdam, Netherlands
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1131b446772d33c76378dc42dd7620a1 = L.marker(
+                [48.8566, 2.3522],
+                {}
+            ).addTo(map_75aefd136a9bd36b06aabfd8211c811b);
+        
+    
+            var icon_ebc7ac47194823b1231111047d6e6017 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-star", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1131b446772d33c76378dc42dd7620a1.setIcon(icon_ebc7ac47194823b1231111047d6e6017);
+        
+    
+        var popup_aca5fa9bbf6a6db38ccbc2586e61434d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_81654cc9b03a8729fbdbb8a4b132b2e2 = $(`<div id="html_81654cc9b03a8729fbdbb8a4b132b2e2" style="width: 100.0%; height: 100.0%;">Paris, France</div>`)[0];
+                popup_aca5fa9bbf6a6db38ccbc2586e61434d.setContent(html_81654cc9b03a8729fbdbb8a4b132b2e2);
+            
+        
+
+        marker_1131b446772d33c76378dc42dd7620a1.bindPopup(popup_aca5fa9bbf6a6db38ccbc2586e61434d)
+        ;
+
+        
+    
+    
+            marker_1131b446772d33c76378dc42dd7620a1.bindTooltip(
+                `<div>
+                     Paris, France
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1314fc348d1129bd66a3d793996d85da = L.marker(
+                [51.4556, 7.0116],
+                {}
+            ).addTo(map_75aefd136a9bd36b06aabfd8211c811b);
+        
+    
+            var icon_01e812ab562b5b0488a256879bdad8c2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-star", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1314fc348d1129bd66a3d793996d85da.setIcon(icon_01e812ab562b5b0488a256879bdad8c2);
+        
+    
+        var popup_510225fc40a3f65caaef126e1fb5fec2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_22ad8b7c9c9a4f73a8cedb4b3e65420c = $(`<div id="html_22ad8b7c9c9a4f73a8cedb4b3e65420c" style="width: 100.0%; height: 100.0%;">Essen, Germany</div>`)[0];
+                popup_510225fc40a3f65caaef126e1fb5fec2.setContent(html_22ad8b7c9c9a4f73a8cedb4b3e65420c);
+            
+        
+
+        marker_1314fc348d1129bd66a3d793996d85da.bindPopup(popup_510225fc40a3f65caaef126e1fb5fec2)
+        ;
+
+        
+    
+    
+            marker_1314fc348d1129bd66a3d793996d85da.bindTooltip(
+                `<div>
+                     Essen, Germany
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e0c8cc8daae923682024d665781e6262 = L.marker(
+                [41.3851, 2.1734],
+                {}
+            ).addTo(map_75aefd136a9bd36b06aabfd8211c811b);
+        
+    
+            var icon_b608d48550749201d51b6cf767e5a6d1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-star", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e0c8cc8daae923682024d665781e6262.setIcon(icon_b608d48550749201d51b6cf767e5a6d1);
+        
+    
+        var popup_42f258ba2ea2bdc721057ccb07e570e1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_47f32d2b6ece0c9c66e5587d69d9fa33 = $(`<div id="html_47f32d2b6ece0c9c66e5587d69d9fa33" style="width: 100.0%; height: 100.0%;">Barcelona, Spain</div>`)[0];
+                popup_42f258ba2ea2bdc721057ccb07e570e1.setContent(html_47f32d2b6ece0c9c66e5587d69d9fa33);
+            
+        
+
+        marker_e0c8cc8daae923682024d665781e6262.bindPopup(popup_42f258ba2ea2bdc721057ccb07e570e1)
+        ;
+
+        
+    
+    
+            marker_e0c8cc8daae923682024d665781e6262.bindTooltip(
+                `<div>
+                     Barcelona, Spain
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_eab43eb2d7399bcbcd79314229ba2339 = L.marker(
+                [41.8719, 12.5674],
+                {}
+            ).addTo(map_75aefd136a9bd36b06aabfd8211c811b);
+        
+    
+            var icon_3de0fae8fa05b4fc8ceeab16aef14702 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-star", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_eab43eb2d7399bcbcd79314229ba2339.setIcon(icon_3de0fae8fa05b4fc8ceeab16aef14702);
+        
+    
+        var popup_e3439938bd847e996699f7a8f892388a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_934a04ab8a208c7bf1a2791c170bff93 = $(`<div id="html_934a04ab8a208c7bf1a2791c170bff93" style="width: 100.0%; height: 100.0%;">Italy</div>`)[0];
+                popup_e3439938bd847e996699f7a8f892388a.setContent(html_934a04ab8a208c7bf1a2791c170bff93);
+            
+        
+
+        marker_eab43eb2d7399bcbcd79314229ba2339.bindPopup(popup_e3439938bd847e996699f7a8f892388a)
+        ;
+
+        
+    
+    
+            marker_eab43eb2d7399bcbcd79314229ba2339.bindTooltip(
+                `<div>
+                     Italy
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
